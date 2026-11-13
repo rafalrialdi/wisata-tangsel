@@ -1,0 +1,120 @@
+backend:
+  name: github
+  app_title: Admin Jelajah Tangsel
+  repo: rafalrialdi/wisata-tangsel          # GANTI: username/nama-repo GitHub Anda
+  branch: main
+  base_url: https://sveltia-cms-auth.rafalrialdi71.workers.dev   # Worker OAuth yang sama dengan web lama
+
+locale: id
+
+# Foto yang diunggah lewat admin disimpan di folder ini.
+media_folder: public/assets/img
+public_folder: /assets/img
+
+collections:
+  # ---------------------------------------------------------------
+  # 1. Tempat wisata: satu file JSON per tempat di data/wisata/
+  # ---------------------------------------------------------------
+  - name: wisata
+    label: Tempat Wisata
+    label_singular: Tempat Wisata
+    folder: data/wisata
+    create: true
+    extension: json
+    format: json
+    slug: "{{slug}}"            # nama file dibuat dari kolom "nama" dan menjadi alamat halaman
+    identifier_field: nama
+    summary: "{{nama}} ({{kecamatan}})"
+    fields:
+      - { label: Nama Tempat, name: nama, widget: string }
+      - label: Kecamatan
+        name: kecamatan
+        widget: select
+        options: [Ciputat, Ciputat Timur, Pamulang, Pondok Aren, Serpong, Serpong Utara, Setu]
+      - label: Kategori
+        name: kategori
+        widget: select
+        required: false
+        options: [Danau & Situ, Taman Kota, Museum & Budaya, Alam, Kuliner, Rekreasi Keluarga]
+      - { label: "Urutan Tampil (angka kecil tampil lebih dulu)", name: urutan, widget: number, value_type: int, min: 1, required: false }
+      - { label: "Tampilkan di Homepage (Pilihan Tempat Populer)", name: unggulan, widget: boolean, default: false }
+      - { label: "Ringkasan (kalimat di bawah judul)", name: ringkasan, widget: text, required: false }
+      - label: "Foto (foto pertama menjadi foto utama dan foto kartu)"
+        name: foto
+        widget: list
+        min: 1
+        summary: "{{fields.judul}}"
+        fields:
+          - { label: Foto, name: gambar, widget: image }
+          - { label: "Judul Foto (tampil di galeri)", name: judul, widget: string, required: false }
+          - { label: "Keterangan Foto", name: keterangan, widget: string, required: false }
+      - { label: "Jam Operasional (contoh: Setiap Hari, 06.00 – 18.00 WIB)", name: jam_buka, widget: string, required: false }
+      - { label: "Waktu Kunjungan Terbaik (satu baris per waktu)", name: waktu_terbaik, widget: text, required: false }
+      - { label: Alamat Lengkap, name: alamat, widget: text, required: false }
+      - { label: "Info Akses (contoh: Dekat stasiun ...)", name: akses, widget: string, required: false }
+      - label: Fasilitas
+        name: fasilitas
+        widget: list
+        required: false
+        summary: "{{fields.nama}}"
+        fields:
+          - { label: Nama Fasilitas, name: nama, widget: string }
+          - label: Ikon
+            name: ikon
+            widget: select
+            default: check_circle
+            options:
+              - { label: Jogging Track, value: directions_run }
+              - { label: Gazebo / Tempat Duduk, value: deck }
+              - { label: Memancing, value: phishing }
+              - { label: Toilet, value: wc }
+              - { label: Musholla, value: mosque }
+              - { label: Parkir, value: local_parking }
+              - { label: Kuliner / Kantin, value: restaurant }
+              - { label: Taman, value: park }
+              - { label: Spot Foto, value: photo_camera }
+              - { label: Sepeda, value: pedal_bike }
+              - { label: Area Bermain Anak, value: child_care }
+              - { label: Wi-Fi, value: wifi }
+              - { label: Umum, value: check_circle }
+      - { label: "Link Google Maps (untuk tombol Lokasi)", name: maps, widget: string, required: false }
+      - { label: "Judul Ulasan", name: judul_ulasan, widget: string, required: false }
+      - { label: "Deskripsi (pisahkan paragraf dengan satu baris kosong)", name: deskripsi, widget: text }
+      - { label: "Kutipan Pilihan (tampil setelah paragraf kedua)", name: kutipan, widget: text, required: false }
+
+  # ---------------------------------------------------------------
+  # 2. Teks dan foto di Homepage: satu file data/pengaturan/beranda.json
+  # ---------------------------------------------------------------
+  - name: pengaturan
+    label: Pengaturan Beranda
+    format: json
+    files:
+      - name: beranda
+        label: Halaman Beranda
+        file: data/pengaturan/beranda.json
+        fields:
+          - { label: "Foto Latar Panorama (seluruh halaman)", name: latar, widget: image }
+          - { label: "Hero: Subjudul", name: hero_subjudul, widget: string }
+          - { label: "Hero: Judul Baris 1", name: hero_judul_1, widget: string }
+          - { label: "Hero: Judul Baris 2 (miring, warna emas)", name: hero_judul_2, widget: string }
+          - { label: "Hero: Paragraf", name: hero_paragraf, widget: text }
+          - { label: "Kartu Sorotan: Foto", name: kartu_sorotan_foto, widget: image }
+          - { label: "Kartu Sorotan: Label Kecil", name: kartu_sorotan_label, widget: string }
+          - { label: "Kartu Sorotan: Judul", name: kartu_sorotan_judul, widget: string }
+          - label: "Kartu Sorotan: Tautkan ke Tempat Wisata (opsional)"
+            name: kartu_sorotan_wisata
+            widget: relation
+            collection: wisata
+            search_fields: [nama]
+            value_field: "{{slug}}"
+            display_fields: [nama]
+            required: false
+          - { label: "Judul Bagian Destinasi", name: judul_destinasi, widget: string }
+          - { label: "Deskripsi Bagian Destinasi", name: deskripsi_destinasi, widget: text }
+          - { label: "Kutipan Penutup", name: kutipan, widget: string }
+          - { label: "Paragraf Penutup", name: kutipan_paragraf, widget: text }
+          - { label: "Teks Tombol Ajakan", name: tombol_ajakan, widget: string }
+          - { label: "Foto Penutup 1", name: foto_penutup_1, widget: image, required: false }
+          - { label: "Keterangan Foto Penutup 1", name: keterangan_foto_1, widget: string, required: false }
+          - { label: "Foto Penutup 2", name: foto_penutup_2, widget: image, required: false }
+          - { label: "Keterangan Foto Penutup 2", name: keterangan_foto_2, widget: string, required: false }

@@ -1,0 +1,34 @@
+{
+  "nama": "Taman Kota 2 BSD",
+  "kecamatan": "Serpong",
+  "kategori": "Taman Kota",
+  "urutan": 2,
+  "unggulan": true,
+  "ringkasan": "Taman hijau dengan jembatan kayu dan jalur pejalan kaki yang teduh, cocok untuk berjalan santai bersama keluarga.",
+  "foto": [
+    {
+      "gambar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBAk7NQCH13Dis7yJylgsT7K3fmwPUv7XVaBis6ql8Amly0pkhQ9EwUfB2DA-EhNYGlvFbYd46_J0SWl_j3lBY7gebiSUeKFbbyd9aH0FA2kghGLZhYUDe-py2wa7A028xToOO3wyK1AaTw2ebpzSXribNDOt7mfacM6_VCtKVHLDalHtqELhCGH91sDxMdDHZhXeK7gZst9uXZhTYSnCkkxHvoWhuLvGQ-r1GF_A",
+      "judul": "Jembatan kayu Taman Kota 2 BSD",
+      "keterangan": ""
+    }
+  ],
+  "jam_buka": "Setiap Hari",
+  "alamat": "BSD City, Kecamatan Serpong, Kota Tangerang Selatan",
+  "fasilitas": [
+    {
+      "nama": "Jogging Track",
+      "ikon": "directions_run"
+    },
+    {
+      "nama": "Taman",
+      "ikon": "park"
+    },
+    {
+      "nama": "Spot Foto",
+      "ikon": "photo_camera"
+    }
+  ],
+  "maps": "https://www.google.com/maps/search/?api=1&query=Taman+Kota+2+BSD+Tangerang+Selatan",
+  "judul_ulasan": "Hijau yang Teduh di Tengah Kota",
+  "deskripsi": "Contoh data. Ganti teks ini lewat panel admin dengan deskripsi asli tempat wisata."
+}

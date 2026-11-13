@@ -1,0 +1,30 @@
+{
+  "nama": "Setu Babakan Rawa Lele",
+  "kecamatan": "Pamulang",
+  "kategori": "Danau & Situ",
+  "urutan": 3,
+  "unggulan": true,
+  "ringkasan": "Danau dan lahan basah yang tenang dengan teratai dan pemandangan langit senja.",
+  "foto": [
+    {
+      "gambar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZeUBIUSVzvUiJoRxMVnWzluuHPHHRIZwo5GEuwDxVF68IDnVvJyjieBF9JM9FN2m_ZOHTGMtyqYZi8eczNTF6u3ABFkBX3l_360rms8meRiCIdJQObW93rjNttF_9bgmSjVfhMtrPItLYRVx2KY0mgf0gonQWVHtE6OA0zOIx3Lehk-uMfZo97PcxJjda8QsUM74R0Lz30p9jph3tRTs_vBgUIDmlb7CR1q8ahw",
+      "judul": "Danau dengan teratai",
+      "keterangan": ""
+    }
+  ],
+  "jam_buka": "Setiap Hari",
+  "alamat": "Kecamatan Pamulang, Kota Tangerang Selatan",
+  "fasilitas": [
+    {
+      "nama": "Taman",
+      "ikon": "park"
+    },
+    {
+      "nama": "Spot Foto",
+      "ikon": "photo_camera"
+    }
+  ],
+  "maps": "https://www.google.com/maps/search/?api=1&query=Setu+Babakan+Rawa+Lele+Pamulang",
+  "judul_ulasan": "Ketenangan di Tepian Air",
+  "deskripsi": "Contoh data. Ganti teks ini lewat panel admin dengan deskripsi asli tempat wisata."
+}
