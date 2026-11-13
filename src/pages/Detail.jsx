@@ -83,8 +83,8 @@ export default function Detail() {
         </button>
       </header>
 
-      {/* HERO */}
-      <section className="relative min-h-[640px] md:min-h-[900px] w-full flex items-end pb-16 md:pb-24 px-margin-mobile md:px-margin overflow-hidden">
+      {/* HERO: tinggi minimal 1 layar penuh (svh = tinggi layar yang terlihat, aman di HP) */}
+      <section className="relative min-h-svh w-full flex items-end pb-16 md:pb-24 px-margin-mobile md:px-margin overflow-hidden">
         <div className="absolute inset-0 z-0">
           {hero && (
             <img
@@ -110,7 +110,8 @@ export default function Detail() {
             </span>
           </div>
 
-          <h1 className="font-display text-[64px] md:text-[120px] leading-[0.95] tracking-tight mb-6">
+          {/* Ukuran judul mengikuti lebar (9.5vw) dan tinggi layar (12vh), diambil yang terkecil, maks 116px */}
+          <h1 className="font-display text-[length:clamp(2.75rem,min(9.5vw,12vh),7.25rem)] leading-[0.95] tracking-tight mb-6">
             <Judul nama={w.nama} />
           </h1>
 

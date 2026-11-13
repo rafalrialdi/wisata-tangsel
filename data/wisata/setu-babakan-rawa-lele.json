@@ -4,17 +4,42 @@
   "kategori": "Danau & Situ",
   "urutan": 3,
   "unggulan": true,
-  "ringkasan": "Danau dan lahan basah yang tenang dengan teratai dan pemandangan langit senja.",
+  "ringkasan": "Danau dan lahan basah tenang di Pamulang dengan permukaan air jernih, pepohonan di tepian, dan panorama senja yang menjadi favorit warga untuk memancing dan bersantai.",
   "foto": [
     {
-      "gambar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZeUBIUSVzvUiJoRxMVnWzluuHPHHRIZwo5GEuwDxVF68IDnVvJyjieBF9JM9FN2m_ZOHTGMtyqYZi8eczNTF6u3ABFkBX3l_360rms8meRiCIdJQObW93rjNttF_9bgmSjVfhMtrPItLYRVx2KY0mgf0gonQWVHtE6OA0zOIx3Lehk-uMfZo97PcxJjda8QsUM74R0Lz30p9jph3tRTs_vBgUIDmlb7CR1q8ahw",
-      "judul": "Danau dengan teratai",
-      "keterangan": ""
+      "gambar": "/assets/img/setu-babakan-rawa-lele-3.jpg",
+      "judul": "Hamparan air tenang di pagi hari",
+      "keterangan": "Langit cerah memantul di permukaan setu yang teduh"
+    },
+    {
+      "gambar": "/assets/img/setu-babakan-rawa-lele-1.jpg",
+      "judul": "Senja di tepian setu",
+      "keterangan": "Siluet warga menyusuri tepian air saat matahari terbenam"
+    },
+    {
+      "gambar": "/assets/img/setu-babakan-rawa-lele-2.jpg",
+      "judul": "Permukaan air yang menenangkan",
+      "keterangan": "Riak air dangkal dengan latar hijau dan pepohonan"
+    },
+    {
+      "gambar": "/assets/img/setu-babakan-rawa-lele-4.jpg",
+      "judul": "Pepohonan rindang di tepian danau",
+      "keterangan": "Rimbun pohon di sisi utara kawasan setu"
     }
   ],
-  "jam_buka": "Setiap Hari",
-  "alamat": "Kecamatan Pamulang, Kota Tangerang Selatan",
+  "jam_buka": "Setiap hari, 06.00 – 18.00 WIB",
+  "waktu_terbaik": "Pagi hari: 06.00 – 08.30 WIB — udara segar dan air tenang, cocok untuk memancing\nSore hari: 16.30 – 18.00 WIB — panorama senja paling indah dari tepian setu",
+  "alamat": "Jl. Rawa Lele, Kel. Bambu Apus, Kec. Pamulang, Kota Tangerang Selatan, Banten 15415",
+  "akses": "Berjarak sekitar 15 menit berkendara dari Universitas Pamulang dan Universitas Terbuka, dapat dilalui angkutan umum jurusan Pamulang.",
   "fasilitas": [
+    {
+      "nama": "Area Memancing",
+      "ikon": "phishing"
+    },
+    {
+      "nama": "Gazebo Santai",
+      "ikon": "deck"
+    },
     {
       "nama": "Taman",
       "ikon": "park"
@@ -22,9 +47,18 @@
     {
       "nama": "Spot Foto",
       "ikon": "photo_camera"
+    },
+    {
+      "nama": "Toilet Umum",
+      "ikon": "wc"
+    },
+    {
+      "nama": "Parkir Luas",
+      "ikon": "local_parking"
     }
   ],
   "maps": "https://www.google.com/maps/search/?api=1&query=Setu+Babakan+Rawa+Lele+Pamulang",
   "judul_ulasan": "Ketenangan di Tepian Air",
-  "deskripsi": "Contoh data. Ganti teks ini lewat panel admin dengan deskripsi asli tempat wisata."
+  "deskripsi": "Di tengah padatnya Pamulang, kawasan Setu Babakan Rawa Lele masih menyisakan ruang untuk air, hijau, dan waktu yang berjalan lebih lambat. Permukaan air yang luas menjadi cermin bagi pepohonan di tepiannya, terutama saat pagi dan menjelang sore.\n\nWarga datang dengan berbagai cara menikmati tempat ini: sebagian membawa alat pancing dan duduk berjam-jam di tepian, sebagian lain memilih berjalan ringan sambil menikmati udara sejuk. Suara burung dan riak air menjadi latar yang menenangkan, jauh dari bising jalan raya.\n\nSaat senja tiba, langit jingga memantul di permukaan air dan siluet warga yang menyusuri tepian berubah menjadi pemandangan khas kawasan ini. Tempat ini sederhana, gratis, dan terbuka untuk siapa pun yang ingin berhenti sejenak.",
+  "kutipan": "Tidak semua ketenangan butuh perjalanan jauh; kadang cukup duduk di tepian setu."
 }

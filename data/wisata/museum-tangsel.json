@@ -1,33 +1,64 @@
 {
-  "nama": "Museum Tangsel",
-  "kecamatan": "Serpong",
-  "kategori": "Museum & Budaya",
+  "nama": "Aviary Park Bintaro",
+  "kecamatan": "Ciputat Timur",
+  "kategori": "Rekreasi Keluarga",
   "urutan": 4,
   "unggulan": true,
-  "ringkasan": "Bangunan budaya dengan halaman taman yang tertata, menyimpan cerita sejarah dan budaya Tangerang Selatan.",
+  "ringkasan": "Taman burung dan satwa di kawasan Bintaro Jaya dengan kandang burung berukuran besar, koleksi satwa dari berbagai belahan dunia, serta area edukasi yang ramah anak.",
   "foto": [
     {
-      "gambar": "https://lh3.googleusercontent.com/aida-public/AB6AXuAjQPvoZ9ph2SsD9wC-juVnt8yNztpcf40WWFDLqUd6rrA0xP_0_ugWFnQim2NkjTKMzMPPuYPoIB32SCznrfCd67Q_xEHREWCJC8sZABtT7NI_x14GO1tXlGIPPDJ-sto6V7_o6BJaqw6JyqzCiwInGGlgksAAs9lntfep_LN0zoDu3Kvi549b5sgBTt6xw88zhksjQOT5oYsIuMS4MBREQqYGXeOpe2_g2bYCvw",
-      "judul": "Fasad Museum Tangsel",
-      "keterangan": "rumah museum tangsel"
+      "gambar": "/assets/img/aviary-park-bintaro-1.jpg",
+      "judul": "Koleksi burung di Aviary Park",
+      "keterangan": "Salah satu satwa koleksi di area terbuka taman burung"
+    },
+    {
+      "gambar": "/assets/img/aviary-park-bintaro-2.jpg",
+      "judul": "Kupu-kupu di taman bunga",
+      "keterangan": "Area taman yang menjadi rumah bagi serangga dan burung kecil"
+    },
+    {
+      "gambar": "/assets/img/aviary-park-bintaro-3.jpg",
+      "judul": "Beragam satwa untuk edukasi",
+      "keterangan": "Koleksi satwa dipamerkan dalam kandang luas dan tertata"
+    },
+    {
+      "gambar": "/assets/img/aviary-park-bintaro-4.jpg",
+      "judul": "Pepohonan rindang di dalam taman",
+      "keterangan": "Rimbun pohon di sekitar jalur jelajah pengunjung"
     }
   ],
-  "jam_buka": "Lihat jadwal terbaru",
-  "waktu_terbaik": "",
-  "alamat": "Kecamatan Serpong, Kota Tangerang Selatan",
-  "akses": "",
+  "jam_buka": "Selasa – Minggu, 09.00 – 17.00 WIB (Senin tutup)",
+  "waktu_terbaik": "Pagi hari: 09.00 – 11.00 WIB — satwa lebih aktif dan suasana masih sejuk\nSore hari: 15.00 – 16.30 WIB — cahaya bagus untuk foto dan tidak terlalu panas",
+  "alamat": "Jl. Bintaro Utama IX, Kel. Pondok Pucung, Kec. Ciputat Timur, Kota Tangerang Selatan, Banten 15229",
+  "akses": "Berada di kawasan Bintaro Jaya, sekitar 15 menit dari Stasiun Jurangmangu dan dapat dicapai lewat Jalan Tol Pondok Aren–Bintaro.",
   "fasilitas": [
     {
-      "nama": "Parkir",
-      "ikon": "local_parking"
+      "nama": "Spot Foto",
+      "ikon": "photo_camera"
+    },
+    {
+      "nama": "Area Bermain Anak",
+      "ikon": "child_care"
+    },
+    {
+      "nama": "Taman",
+      "ikon": "park"
+    },
+    {
+      "nama": "Kuliner / Kantin",
+      "ikon": "restaurant"
     },
     {
       "nama": "Toilet Umum",
       "ikon": "wc"
+    },
+    {
+      "nama": "Parkir Luas",
+      "ikon": "local_parking"
     }
   ],
-  "maps": "https://www.google.com/maps/search/?api=1&query=Museum+Tangerang+Selatan",
-  "judul_ulasan": "Menelusuri Jejak Budaya Tangsel",
-  "deskripsi": "Contoh data. Ganti teks ini lewat panel admin dengan deskripsi asli tempat wisata.",
-  "kutipan": ""
+  "maps": "https://www.google.com/maps/search/?api=1&query=Aviary+Park+Bintaro+Tangsel",
+  "judul_ulasan": "Berkenalan dengan Sayap-Sayap dari Berbagai Benua",
+  "deskripsi": "Aviary Park Bintaro menghadirkan pengalaman melihat burung dan satwa dari jarak dekat di tengah kawasan kota. Kandang-kandang berukuran besar dirancang menyerupai habitat aslinya, sehingga pengunjung dapat mengamati perilaku satwa tanpa harus keluar dari Tangerang Selatan.\n\nJalur jelajah di antara pepohonan membuat kunjungan terasa seperti menyusuri hutan kecil. Setiap area dilengkapi papan informasi yang menjelaskan asal, kebiasaan, dan status konservasi satwa, menjadikannya tempat belajar yang menyenangkan bagi anak-anak.\n\nSelain menjadi alternatif rekreasi keluarga, tempat ini juga sering menjadi tujuan kunjungan sekolah. Perpaduan edukasi dan rekreasi membuat pengunjung pulang membawa pengetahuan baru, bukan sekadar foto.",
+  "kutipan": "Mengenal satwa dari dekat adalah langkah pertama untuk merawatnya."
 }

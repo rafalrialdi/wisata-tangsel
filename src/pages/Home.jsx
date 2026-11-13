@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { asset, beranda, getAllWisata } from '../lib/data'
+import { scrollKe } from '../lib/scroll'
 import HomeHeader from '../components/HomeHeader.jsx'
 import SiteFooter from '../components/SiteFooter.jsx'
 import WisataCard from '../components/WisataCard.jsx'
@@ -32,18 +32,41 @@ export default function Home() {
 
   const cariSubmit = (e) => {
     e.preventDefault()
-    document.getElementById('destinasi')?.scrollIntoView({ behavior: 'smooth' })
+    scrollKe('destinasi')
   }
 
-  const sorotan = semua.find((w) => w.slug === beranda.kartu_sorotan_wisata)
-  const bungkusSorotan = (kartu) =>
-    sorotan ? (
-      <Link to={`/wisata/${sorotan.slug}`} className="block w-full max-w-[280px]">
-        {kartu}
-      </Link>
-    ) : (
-      kartu
-    )
+  // Kartu sorotan di hero: panel hitam selalu terlihat di belakang kartu (seperti desain awal).
+  // Kartu ini hanya hiasan visual: tanpa tautan, tanpa hover, dan klik tidak melakukan apa pun.
+  const kartuSorotan = (
+    <div
+      role="img"
+      aria-label={`${beranda.kartu_sorotan_label || ''} ${beranda.kartu_sorotan_judul || ''}`.trim()}
+      className="group relative w-[min(180px,26svh)] sm:w-[min(220px,34svh)] md:w-[min(280px,45svh)] select-none"
+    >
+      {/* Panel hitam di belakang kartu */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-8 -right-5 w-full h-full rounded-2xl bg-card-overlay backdrop-blur-xl border border-border-subtle/20 shadow-2xl rotate-3 hidden md:block"
+      />
+      {/* Kartu foto (tidak bisa diklik) */}
+      <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border-subtle shadow-2xl bg-surface-dark">
+        {beranda.kartu_sorotan_foto && (
+          <img
+            src={asset(beranda.kartu_sorotan_foto)}
+            alt={beranda.kartu_sorotan_judul || ''}
+            className="pointer-events-none w-full h-full object-cover card-zoom-img"
+          />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-background-base/90 via-transparent to-transparent flex flex-col justify-end p-5 pointer-events-none">
+          <span className="text-pill-label text-primary uppercase tracking-widest mb-1">
+            {beranda.kartu_sorotan_label}
+          </span>
+          <p className="text-card-title text-text-primary">{beranda.kartu_sorotan_judul}</p>
+        </div>
+      </div>
+    </div>
+  )
+
   return (
     <div className="relative min-h-screen overflow-x-hidden">
       {/* Latar panorama menyambung */}
@@ -62,18 +85,19 @@ export default function Home() {
       <HomeHeader />
 
       <main className="w-full max-w-[1280px] mx-auto relative z-10">
-        {/* HERO */}
+        {/* HERO: tinggi minimal 1 layar penuh (svh = tinggi layar yang terlihat, aman di HP) */}
         <section
           id="beranda"
-          className="relative min-h-[760px] md:min-h-[920px] w-full flex items-center px-margin-mobile md:px-margin pt-28 pb-16"
+          className="relative min-h-svh w-full flex items-center px-margin-mobile md:px-margin pt-24 pb-10 md:pt-28 md:pb-12"
         >
           <div className="absolute -left-20 top-20 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[140px] pointer-events-none" />
-          <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-12 gap-8 items-center pt-8">
+          <div className="relative z-10 w-full grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
             <div className="md:col-span-7 flex flex-col justify-center">
-              <span className="text-pill-label text-primary uppercase tracking-[0.2em] mb-4">
+              <span className="text-pill-label text-primary uppercase tracking-[0.2em] mb-3 md:mb-4">
                 {beranda.hero_subjudul}
               </span>
-              <h1 className="font-display text-[72px] sm:text-[96px] md:text-[112px] lg:text-[124px] leading-[0.92] mb-8 select-none flex flex-col items-start drop-shadow-2xl">
+              {/* Ukuran judul = antara 56px dan 124px, mengikuti lebar (13vw) dan tinggi layar (17vh), diambil yang terkecil */}
+              <h1 className="font-display text-[length:clamp(3.5rem,min(13vw,17vh),7.75rem)] leading-[0.92] mb-5 md:mb-8 select-none flex flex-col items-start drop-shadow-2xl">
                 <span className="text-text-primary font-normal tracking-[-0.03em]">
                   {beranda.hero_judul_1}
                 </span>
@@ -86,31 +110,14 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="md:col-span-5 relative flex justify-start md:justify-end items-center">
-              <div className="absolute -right-4 -top-8 w-72 h-96 rounded-2xl bg-card-overlay backdrop-blur-xl border border-border-subtle/20 shadow-2xl rotate-3 hidden md:block" />
-              {bungkusSorotan(
-                <div className="relative w-full max-w-[280px] aspect-[3/4] rounded-2xl overflow-hidden border border-border-subtle shadow-2xl hover:-translate-y-2 transition-transform duration-500 bg-surface-dark group">
-                  {beranda.kartu_sorotan_foto && (
-                    <img
-                      src={asset(beranda.kartu_sorotan_foto)}
-                      alt={beranda.kartu_sorotan_judul || ''}
-                      className="w-full h-full object-cover card-zoom-img"
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background-base/90 via-transparent to-transparent flex flex-col justify-end p-5">
-                    <span className="text-pill-label text-primary uppercase tracking-widest mb-1">
-                      {beranda.kartu_sorotan_label}
-                    </span>
-                    <p className="text-card-title text-text-primary">{beranda.kartu_sorotan_judul}</p>
-                  </div>
-                </div>,
-              )}
+            <div className="md:col-span-5 flex justify-start md:justify-end items-center md:pr-6 pointer-events-none">
+              {kartuSorotan}
             </div>
           </div>
         </section>
 
         {/* PENCARIAN */}
-        <section className="relative z-20 px-margin-mobile md:px-margin -mt-8 mb-section-gap-mobile md:mb-section-gap">
+        <section className="relative z-20 px-margin-mobile md:px-margin pt-12 mb-section-gap-mobile md:mb-section-gap">
           <form
             onSubmit={cariSubmit}
             role="search"
@@ -155,9 +162,10 @@ export default function Home() {
             </p>
           ) : (
             <>
+              {/* pt-12 -mt-12 dan pr-8: memberi ruang agar panel hitam dan kartu yang terangkat tidak terpotong */}
               <div
                 ref={carousel}
-                className="flex gap-gutter overflow-x-auto snap-x snap-mandatory no-scrollbar pb-2"
+                className="flex gap-gutter overflow-x-auto snap-x snap-mandatory no-scrollbar pt-12 -mt-12 pr-8 pb-2"
               >
                 {daftar.map((w) => (
                   <WisataCard
@@ -226,12 +234,13 @@ export default function Home() {
               <p className="text-body-default text-text-secondary max-w-[480px] drop-shadow">
                 {beranda.kutipan_paragraf}
               </p>
-              <a
-                href="#destinasi"
+              <button
+                type="button"
+                onClick={() => scrollKe('destinasi')}
                 className="mt-8 inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-primary text-on-primary text-pill-label uppercase tracking-wider hover:bg-accent-hover transition-colors duration-200 shadow-2xl"
               >
                 {beranda.tombol_ajakan}
-              </a>
+              </button>
             </div>
           </div>
         </section>

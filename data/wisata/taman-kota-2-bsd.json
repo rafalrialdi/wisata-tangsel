@@ -4,16 +4,33 @@
   "kategori": "Taman Kota",
   "urutan": 2,
   "unggulan": true,
-  "ringkasan": "Taman hijau dengan jembatan kayu dan jalur pejalan kaki yang teduh, cocok untuk berjalan santai bersama keluarga.",
+  "ringkasan": "Taman seluas lebih dari tiga hektar di kawasan BSD City dengan jalur pejalan kaki, gazebo teduh, dan hamparan rumput terbuka yang luas, cocok untuk bersantai bersama keluarga.",
   "foto": [
     {
-      "gambar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBAk7NQCH13Dis7yJylgsT7K3fmwPUv7XVaBis6ql8Amly0pkhQ9EwUfB2DA-EhNYGlvFbYd46_J0SWl_j3lBY7gebiSUeKFbbyd9aH0FA2kghGLZhYUDe-py2wa7A028xToOO3wyK1AaTw2ebpzSXribNDOt7mfacM6_VCtKVHLDalHtqELhCGH91sDxMdDHZhXeK7gZst9uXZhTYSnCkkxHvoWhuLvGQ-r1GF_A",
-      "judul": "Jembatan kayu Taman Kota 2 BSD",
-      "keterangan": ""
+      "gambar": "/assets/img/taman-kota-2-bsd-1.jpg",
+      "judul": "Pepohonan teduh Taman Kota 2 BSD",
+      "keterangan": "Hamparan rumput dan pohon rindang dengan jalur pejalan kaki"
+    },
+    {
+      "gambar": "/assets/img/taman-kota-2-bsd-2.jpg",
+      "judul": "Panorama taman dari ketinggian",
+      "keterangan": "Area terbuka hijau yang luas di tengah kawasan BSD City"
+    },
+    {
+      "gambar": "/assets/img/taman-kota-2-bsd-3.jpg",
+      "judul": "Kupu-kupu di taman bunga",
+      "keterangan": "Ruang terbuka yang ramah anak dan menarik bagi satwa kecil"
+    },
+    {
+      "gambar": "/assets/img/taman-kota-2-bsd-4.jpg",
+      "judul": "Tepian air di area taman",
+      "keterangan": "Latar biru air dan langit cerah saat siang hari"
     }
   ],
-  "jam_buka": "Setiap Hari",
-  "alamat": "BSD City, Kecamatan Serpong, Kota Tangerang Selatan",
+  "jam_buka": "Setiap hari, 06.00 – 21.00 WIB",
+  "waktu_terbaik": "Pagi hari: 06.00 – 09.00 WIB — sejuk dan cocok untuk jogging atau senam\nSore hari: 16.00 – 18.00 WIB — cahaya lembut, ideal untuk bersantai dan berfoto",
+  "alamat": "Jl. Boulevard Gading Serpong, Kel. Lengkong Karya, Kec. Serpong, Kota Tangerang Selatan, Banten 15311",
+  "akses": "Berada di kawasan BSD City, sekitar 10 menit dari Stasiun Rawa Buntu dan mudah dicapai lewat Jalan Tol Jakarta–Serpong.",
   "fasilitas": [
     {
       "nama": "Jogging Track",
@@ -24,11 +41,24 @@
       "ikon": "park"
     },
     {
+      "nama": "Gazebo Santai",
+      "ikon": "deck"
+    },
+    {
       "nama": "Spot Foto",
       "ikon": "photo_camera"
+    },
+    {
+      "nama": "Area Bermain Anak",
+      "ikon": "child_care"
+    },
+    {
+      "nama": "Parkir Luas",
+      "ikon": "local_parking"
     }
   ],
   "maps": "https://www.google.com/maps/search/?api=1&query=Taman+Kota+2+BSD+Tangerang+Selatan",
   "judul_ulasan": "Hijau yang Teduh di Tengah Kota",
-  "deskripsi": "Contoh data. Ganti teks ini lewat panel admin dengan deskripsi asli tempat wisata."
+  "deskripsi": "Taman Kota 2 BSD merupakan salah satu ruang terbuka hijau andalan di kawasan Serpong. Hamparan rumput yang luas dan deretan pohon besar menciptakan suasana sejuk, sekaligus menjadi tempat warga melepas penat dari hiruk pikuk kawasan bisnis di sekelilingnya.\n\nJalur pejalan kaki yang teduh menghubungkan setiap sudut taman. Pagi hari diisi pelari, pesepeda, dan warga yang berolahraga ringan, sementara sore hari taman dipenuhi keluarga yang duduk di gazebo, anak-anak yang bermain, dan obrolan santai di bawah pepohonan.\n\nBagi yang ingin sekadar duduk menikmati suasana, bangku-bangku di tepi area terbuka menawarkan pemandangan hijau yang menyegarkan mata. Taman ini gratis dibuka untuk umum dan menjadi salah satu alternatif rekreasi murah di Tangerang Selatan.",
+  "kutipan": "Ruang terbuka yang jujur: rumput untuk duduk, jalur untuk berlari, dan teduh untuk semua."
 }
