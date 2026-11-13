@@ -9,11 +9,13 @@
     {
       "gambar": "https://lh3.googleusercontent.com/aida-public/AB6AXuAjQPvoZ9ph2SsD9wC-juVnt8yNztpcf40WWFDLqUd6rrA0xP_0_ugWFnQim2NkjTKMzMPPuYPoIB32SCznrfCd67Q_xEHREWCJC8sZABtT7NI_x14GO1tXlGIPPDJ-sto6V7_o6BJaqw6JyqzCiwInGGlgksAAs9lntfep_LN0zoDu3Kvi549b5sgBTt6xw88zhksjQOT5oYsIuMS4MBREQqYGXeOpe2_g2bYCvw",
       "judul": "Fasad Museum Tangsel",
-      "keterangan": ""
+      "keterangan": "rumah museum tangsel"
     }
   ],
   "jam_buka": "Lihat jadwal terbaru",
+  "waktu_terbaik": "",
   "alamat": "Kecamatan Serpong, Kota Tangerang Selatan",
+  "akses": "",
   "fasilitas": [
     {
       "nama": "Parkir",
@@ -26,5 +28,6 @@
   ],
   "maps": "https://www.google.com/maps/search/?api=1&query=Museum+Tangerang+Selatan",
   "judul_ulasan": "Menelusuri Jejak Budaya Tangsel",
-  "deskripsi": "Contoh data. Ganti teks ini lewat panel admin dengan deskripsi asli tempat wisata."
+  "deskripsi": "Contoh data. Ganti teks ini lewat panel admin dengan deskripsi asli tempat wisata.",
+  "kutipan": ""
 }
