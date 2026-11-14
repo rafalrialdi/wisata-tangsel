@@ -43,10 +43,10 @@ export default function Home() {
       aria-label={`${beranda.kartu_sorotan_label || ''} ${beranda.kartu_sorotan_judul || ''}`.trim()}
       className="group relative w-[min(180px,26svh)] sm:w-[min(220px,34svh)] md:w-[min(280px,45svh)] select-none"
     >
-      {/* Panel hitam di belakang kartu */}
+      {/* Panel hitam di belakang kartu — tampil di semua ukuran layar, geseran lebih rapat di HP */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-8 -right-5 w-full h-full rounded-2xl bg-card-overlay backdrop-blur-xl border border-border-subtle/20 shadow-2xl rotate-3 hidden md:block"
+        className="pointer-events-none absolute -top-4 -right-3 w-full h-full rounded-2xl bg-card-overlay backdrop-blur-xl border border-border-subtle/20 shadow-2xl rotate-3 sm:-top-6 sm:-right-4 md:-top-8 md:-right-5"
       />
       {/* Kartu foto (tidak bisa diklik) */}
       <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border-subtle shadow-2xl bg-surface-dark">
