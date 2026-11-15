@@ -10,11 +10,11 @@ Web informasi wisata Tangerang Selatan. React + Vite + Tailwind, dengan panel ad
    npm install
    npm run dev
    ```
-3. Buka http://localhost:5173 untuk web, dan http://localhost:5173/admin/ untuk panel admin.
+3. Buka http://localhost:5173 untuk web, dan http://localhost:5173/admin/index.html untuk panel admin.
 
 ## Memakai admin di localhost (tanpa login GitHub)
 
-1. Buka http://localhost:5173/admin/ memakai Chrome atau Edge.
+1. Buka http://localhost:5173/admin/index.html memakai Chrome atau Edge.
 2. Klik **Work with Local Repository**, lalu pilih folder proyek ini.
 3. Ubah atau tambah data. Perubahan langsung tersimpan ke file di folder `data/` dan `public/assets/img/`.
 4. Kembali ke http://localhost:5173, tampilan ikut berubah.
