@@ -1,0 +1,66 @@
+{
+  "nama": "Ocean Park BSD City",
+  "kecamatan": "Serpong",
+  "kategori": "Rekreasi Keluarga",
+  "urutan": 1,
+  "unggulan": true,
+  "ringkasan": "Water park seluas 8,6 hektare di jantung BSD City dengan wahana air, wall climbing, dan teater 4D untuk seluruh keluarga.",
+  "foto": [
+    {
+      "gambar": "/assets/img/5fa4d11798221.jpg",
+      "judul": "Pemandangan Udara Ocean Park BSD City",
+      "keterangan": "Seluncuran air warna-warni dan kolam renang Ocean Park BSD City terlihat dari atas."
+    },
+    {
+      "gambar": "/assets/img/about.webp",
+      "judul": "Kolam Utama Ocean Park BSD City",
+      "keterangan": "Pengunjung bermain di kolam berair biru dengan latar bangunan bergaya kastil yang khas."
+    },
+    {
+      "gambar": "/assets/img/ukz9ogtqkfqiymk5jkkv.jpg",
+      "judul": "Terowongan Akuarium",
+      "keterangan": "Pengunjung berjalan menyusuri terowongan kaca dikelilingi berbagai ikan laut."
+    },
+    {
+      "gambar": "/assets/img/Wisata-Tangerang-Ocean-Park-BSD-Traveloka-Xperience-2.webp",
+      "judul": "Flying Rope di Ocean Park BSD City",
+      "keterangan": "Pengunjung menjajal wahana flying rope di atas area seluncuran air yang berwarna-warni."
+    },
+    {
+      "gambar": "/assets/img/images (1).jpg",
+      "judul": "Kawasan Wahana Ocean Park BSD City",
+      "keterangan": "Pemandangan dari atas kawasan wahana yang ramai dan berwarna-warni."
+    },
+    {
+      "gambar": "/assets/img/images (2).jpg",
+      "judul": "Santai di Sungai Arus Ocean Park BSD City",
+      "keterangan": "Pengunjung mengapung santai dengan ban pelampung di sungai buatan yang dikelilingi pepohonan hijau."
+    }
+  ],
+  "jam_buka": "Senin–Kamis: 11.00 – 16.00 WIB, Sabtu, Minggu & hari libur: 09.00 – 16.00 WIB Jumat: Tutup",
+  "waktu_terbaik": "Hari kerja (Senin–Kamis): 11.00 – 13.00 WIB — antrean wahana lebih pendek dan suasana lebih lengang\nAkhir pekan, saat buka: 09.00 – 11.00 WIB — cuaca masih sejuk dan pengunjung belum terlalu ramai\nSore hari: 14.00 – 16.00 WIB — terik mulai reda, nyaman untuk bersantai dan berfoto",
+  "alamat": "Jl. Pahlawan Seribu, BSD City, Kec. Serpong, Kota Tangerang Selatan, Banten 15310",
+  "akses": "Berada di kawasan BSD City, Serpong. Bisa dijangkau dengan motor, mobil, angkutan umum, atau taksi dan ojek online. Tersedia area parkir di lokasi.",
+  "fasilitas": [
+    {
+      "nama": "Temapt Foto",
+      "ikon": "photo_camera"
+    },
+    {
+      "nama": "Tempat Salat",
+      "ikon": "mosque"
+    },
+    {
+      "nama": "Gazebo",
+      "ikon": "deck"
+    },
+    {
+      "nama": "Taman anak anak",
+      "ikon": "park"
+    }
+  ],
+  "maps": "https://www.google.com/maps/search/?api=1&query=Ocean+Park+BSD+City+Serpong",
+  "judul_ulasan": "Ocean Park BSD City: Liburan Air yang Seru untuk Seluruh Keluarga",
+  "deskripsi": "Ocean Park BSD City adalah salah satu water park paling populer di Tangerang Selatan. Dibangun di atas lahan sekitar 8,6 hektare di kawasan BSD City, tempat ini mudah dijangkau dari berbagai penjuru Jabodetabek dan cocok untuk piknik keluarga, acara sekolah, maupun kumpul bersama teman.\n\nPengunjung bisa mencoba beragam wahana air, mulai dari kolam ombak, seluncuran, hingga air terjun buatan Lagoona the Bahama. Untuk yang suka tantangan, tersedia wall climbing, flying rope, dan Flying Tower, sementara teater film 4D menjadi pilihan saat ingin beristirahat dari air.\n\nAgar kunjungan lebih nyaman, datanglah di hari kerja dan bawa pakaian ganti, handuk, serta tabir surya. Harga tiket berbeda antara hari kerja dan akhir pekan, jadi sebaiknya cek informasi terbaru sebelum berangkat.",
+  "kutipan": "Seharian basah-basahan di tengah BSD City, tanpa perlu jauh-jauh dari rumah."
+}
