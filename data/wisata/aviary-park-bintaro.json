@@ -7,14 +7,14 @@
   "ringkasan": "Taman burung dan satwa di kawasan Bintaro Jaya dengan kandang burung berukuran besar, koleksi satwa dari berbagai belahan dunia, serta area edukasi yang ramah anak.",
   "foto": [
     {
+      "gambar": "/assets/img/aviary-park-bintaro-1.jpg",
+      "judul": "Koleksi burung di Aviary Park",
+      "keterangan": "Salah satu satwa koleksi di area terbuka taman seluruh burung"
+    },
+    {
       "gambar": "/assets/img/bf8ac025c453fe5ac4586c0457bc4c56.jpg",
       "judul": "Pepohonan rindang di dalam taman",
       "keterangan": "Rimbun pohon di sekitar jalur jelajah pengunjung"
-    },
-    {
-      "gambar": "/assets/img/aviary-park-bintaro-1.jpg",
-      "judul": "Koleksi burung di Aviary Park",
-      "keterangan": "Salah satu satwa koleksi di area terbuka taman burung"
     },
     {
       "gambar": "/assets/img/aviary-park-bintaro-2.jpg",
